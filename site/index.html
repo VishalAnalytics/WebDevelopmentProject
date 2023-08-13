@@ -2,34 +2,71 @@
 <html>
   <head>
     <title>Coursera Course on HTML, CSS and JS by John Hopkins University</title>
+    <style>
+   h1 {color:olive;}
+   h2 {color:crimson;}
+   h3 {color:black;}
+   p > div{color:blue; font-style: italic;}
+   
+   .Menu li{
+    list-style: none;
+    text-decoration:none;
+    background-color:lime;
+    text-align: center;
+    margin-bottom: 2px ;
+    width: 330px;
+
+   } 
+a:link, a:visited {
+  text-decoration: none;
+  font-style: normal;
+}
+   
+   
+   a:hover, a:active{
+    text-shadow: #69bdd2;
+    text-decoration: none;   
+    color: darkblue;
+    font-size: 18px;
+    font-style: normal;
+    width: 500px;
+   }
+   div li:nth-child(odd){
+    color:gray;
+    font-style: italic;    
+   }
+</style>
   </head>
   <body>
-    <h1 style="color: olive ; font-size: 40px; text-align: center;">HTML, CSS and Javascript Learning Paths</h1>
+    <h1 style="font-size: 40px; text-align: center;">HTML, CSS and Javascript Learning Paths</h1>
 
     <h2> 
-    	<p style="color:purple; margin: 0px 100px; font-size: 1.5em; ">Hello Coursera!</p>
-      <img src="../Full-Stack-tools.jpg" width="400" height="235" alt="Picture describe Full-Stack-Tools"> 
+    	<p style="margin: 0px 100px; font-size: 1.5em; ">Hello Coursera!</p>
+      <img src="../Full-Stack-tools.jpg" width="600" height="400" alt="Picture describe Full-Stack-Tools" onshow="Vishal"> 
 	</h2>
 	<h3 id="#top">
-		Table of different sections on the same page
+		Main Menu
 	</h3>
 
-    <section>
-    	<ol>
+    <section class="Menu">
+    	<ul>
     		<!-- Link to every section in the page -->
     		<li><a href="#section1">Coursera's John Hopkins University Course</a></li>
     		<li><a href="#section2">W3School Course</a></li>
-    		<li><a href="#section3">Edex Course</a></li>
+    		<li><a href="#section3">W3C recommended edX Course</a></li>
     		<li><a href="#section4">Reference Materials</a></li>
-    	</ol>
-    <section id="section1">
+    	</ul>
+    </section>
+    <section id="section1" >
+     
     	<h3>Coursera's John Hopkins University Course</h3>
-    	<p>
+    	
+      <p>
     		<div>
     		There are 5 modules in this course Do you realize that the only functionality of a web application that the user directly interacts with is through the web page? Implement it poorly and, to the user, the server-side becomes irrelevant! Today’s user expects a lot out of the web page: it has to load fast, expose the desired service, and be comfortable to view on all devices: from a desktop computers to tablets and mobile phones.
 			</div>
-			<div></div>
-			<div>
+			</p>
+      <p>
 			In this course, we will learn the basic tools that every web page coder needs to know. We will start from the ground up by learning how to implement modern web pages with HTML and CSS. We will then advance to learning how to code our pages such that its components rearrange and resize themselves automatically based on the size of the user’s screen. You’ll be able to code up a web page that will be just as useful on a mobile phone as on a desktop computer. No “pinch and zoom” required! Last but certainly not least, we will get a thorough introduction to the most ubiquitous, popular, and incredibly powerful language of the web: Javascript. Using Javascript, you will be able to build a fully functional web application that utilizes Ajax to expose server-side functionality and data to the end user.
 			</div>
 			<div></div>
@@ -41,8 +78,10 @@
     	</p>
     	
     </section>
-     <section id="section2">
+     <section id="section2" >
+      
     	<h3>W3School Course</h3>
+      
     	<p>
     		This is another openly available course. Here we can learn an overview of Web Development. However, this course is not a comprehensive one. But it is having various examples, which makes it a user friendly way to get a first look at Web Devlopment.
 
@@ -54,7 +93,7 @@
 				HTML is easy to learn - You will enjoy it!
 			</div>
 			
-
+<>
 			<div>
 			Link is: 
     		<a href="https://www.w3schools.com/html/default.asp"
@@ -62,8 +101,10 @@
     		</div>
     		
     </section>
-     <section id="section3">
-    	<h3>Edex Course</h3>
+     <section id="section3" >
+      
+    	<h3>edX Course</h3>
+      
     	<p>
     		This is specially designed courses. Which is created for audience which is having intermediate level of experties.
     		You can also check this out if you need any basic information about web devlopment.
@@ -83,7 +124,6 @@
 			<li>During Module 2 "Press and Play!", you get familiar with HTML5 multimedia features, play..</li>
 			</ul>
 		</div>
-
     	<div>
 			Link is: 
     		<a href="https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2022/home"
@@ -92,23 +132,54 @@
 
     	</p>
     </section>
+    <section id="section4">
+      <h2>Reference Materials</h2>
     <div>
-    	<h2><a name="section4">Reference Materials</a></h2>
-    	<p>List is :
+    	
+      
+    	<p class="Reference">
+        <h5>List of useful links are:</h5>
     		<ul>
-	    		<li><a href="https://html.spec.whatwg.org/multipage/"
-	    		target="_blank" title="This is course's official page">HTML Book</a></li>
-	    		<li><a href="https://jsfiddle.net/"
-	    		target="_blank" title="This is course's official page">JS Fiddle</a></li>
-	    		<li><a href="https://css-tricks.com/"
-	    		target="_blank" title="This is course's official page">CSS Tricks Corner</a></li>
-	    		<li><a href="https://validator.w3.org/"
-	    		target="_blank" title="This is course's official page">W3 Validator of HTML</a></li>
-				<li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html"
-	    		target="_blank" title="This is course's official page">W3 Validator of HTML</a></li>
+
+          <li>Reference Materials</li>
+          <ul>
+  	    		<li><a href="https://html.spec.whatwg.org/multipage/"
+  	    		target="_blank" title="This is course's official page">HTML Book</a></li>
+            <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html"
+            target="_blank" title="This is course's official page">W3 Validator of HTML</a></li>
+            <li><a href="https://css-tricks.com/"
+            target="_blank" title="This is course's official page">CSS Tricks Corner</a></li>
+          </ul>
+
+          <li>Online Websites for Practice & Debugging</li>
+          <ul>
+  	    		<li><a href="https://jsfiddle.net/"
+  	    		target="_blank" title="This is jsfiddle's official page">jsfiddle</a></li>
+  	    		<li><a href="https://codepen.io/pen/"
+  	    		target="_blank" title="This is codepen's official page">codepen Editor</a></li>
+  	    		<li><a href="https://validator.w3.org/"
+  	    		target="_blank" title="This is validator's official page">w3 Validator for HTML</a></li>
+            
+          </ul>
+				
+          
+        <li> Coursera's courses on Angular JS</li>
+        <ul>
+            <li><a href="https://www.coursera.org/learn/single-page-web-apps-with-angularjs"
+              target="_blank" title="Courses by J. H. University">Course by John Hopkins Univ</a></li>
+              <li><a href="https://www.coursera.org/specializations/full-stack-mobile-app-development"
+              target="_blank" title="HK University Courses">Course by Hong Kong Univ</a></li>
+            </ul>
+        <li> Link of Tutor's website</li>
+        <ul>
+              <li><a href="https://clearlydecoded.com/"
+              target="_blank" title="Courses from Yaakov Chaikin">Website of Yaakov Chaikin from John Hopkins Univ</a></li>
+          </ul>
+          
 	    	</ul>
 
     	</p>
+    </section>
     	<p>
     		<a href="#top">Back to Top</a>
     	</p>
