@@ -1,0 +1,32 @@
+ h1 {color:olive;}
+   h2 {color:crimson;}
+   h3 {color:black;}
+   p > div{color:blue; font-style: italic;}
+   
+   .Menu li{
+    list-style: none;
+    text-decoration:none;
+    background-color:lime;
+    text-align: center;
+    margin-bottom: 2px ;
+    width: 330px;
+
+   } 
+a:link, a:visited {
+  text-decoration: none;
+  font-style: normal;
+}
+   
+   
+   a:hover, a:active{
+    text-shadow: #69bdd2;
+    text-decoration: none;   
+    color: darkblue;
+    font-size: 18px;
+    font-style: normal;
+    width: 500px;
+   }
+   div li:nth-child(odd){
+    color:gray;
+    font-style: italic;    
+   }
